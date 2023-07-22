@@ -1,6 +1,10 @@
-# FriendZone - A full-stack realtime messaging chat application
+# NEXTGen - A full-stack realtime messaging chat application
 
-A project to learn modern full-stack development made by Josh.
+This collaborative effort aims to create a full-stack realtime chat application using NextJS 13. The project centers around exploring modern development techniques, with a focus on delivering a high-quality application.
+
+This app incorporates several key features, including real-time messaging, a friendship system enabling friend requests via email, and efficient database queries using Upstash Redis. The user interface is designed to be responsive, thanks to TailwindCSS, and sensitive routes are safeguarded for data protection. Users can also benefit from the convenience of Google authentication.
+
+Built with TypeScript, the application leverages class merging, conditional classes, and variants to achieve impressive performance. A super-performant realtime chat application ready for deployment, offering instant messaging, a robust friendship system, fast database queries, and an engaging UI, making it an ideal platform for seamless communication and social interactions.
 
 ## Features
 
@@ -19,18 +23,3 @@ A project to learn modern full-stack development made by Josh.
 - Conditional classes with clsx
 - Variants with class-variance-authority
 
-## Things I forgot in the video
-- [Adding metadata to some pages](https://github.com/joschan21/nextjs-realtime-chat/blob/master/src/app/(dashboard)/dashboard/chat/%5BchatId%5D/page.tsx)
-- [Adding a favicon](https://github.com/joschan21/nextjs-realtime-chat/blob/master/public/favicon.ico)
-
-## Acknowledgements
-
-- [Awesome Button UI Component](https://ui.shadcn.com/)
-
-## Feedback
-
-If you have any feedback, please reach out to me at admin@wordful.ai
-
-## License
-
-[MIT](https://choosealicense.com/licenses/mit/)

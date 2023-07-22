@@ -7,7 +7,7 @@ import { fetchRedis } from '@/helpers/redis'
 function getGoogleCredentials() {
   const clientId = process.env.GOOGLE_CLIENT_ID
   const clientSecret = process.env.GOOGLE_CLIENT_SECRET
-  // console.log("from auth", clientId, clientSecret)
+
   if (!clientId || clientId.length === 0) {
     throw new Error('Missing GOOGLE_CLIENT_ID')
   }
@@ -15,7 +15,7 @@ function getGoogleCredentials() {
   if (!clientSecret || clientSecret.length === 0) {
     throw new Error('Missing GOOGLE_CLIENT_SECRET')
   }
-
+console.log(clientId, "  ", clientSecret)
   return { clientId, clientSecret }
 }
 
@@ -28,9 +28,6 @@ export const authOptions: NextAuthOptions = {
   pages: {
     signIn: '/login',
   },
-
-  secret: process.env.SECRET,
-  
   providers: [
     GoogleProvider({
       clientId: getGoogleCredentials().clientId,
